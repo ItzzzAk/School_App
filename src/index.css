@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("/src/assets/fonts/gilroy-bold/Gilroy-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("/src/assets/fonts/gilroy-bold/Gilroy-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("/src/assets/fonts/gilroy-bold/Gilroy-Heavy.ttf");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("/src/assets/fonts/gilroy-bold/Gilroy-Light.ttf");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("/src/assets/fonts/gilroy-bold/Gilroy-Medium.ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+body {
+  position: relative;
+}
+
+.ball1 {
+  top: 30%;
+  left: 80%;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  filter: blur(100px);
+  border-radius: 50%;
+  background: blueviolet;
+}
+
+.ball2 {
+  top: 60%;
+  left: 10%;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  filter: blur(100px);
+  border-radius: 50%;
+  background: blueviolet;
+}
+
+@media screen and (width <= 1366px) {
+  .main {
+    width: 100%;
+  }
+
+  .ball1 {
+    top: 2%;
+    left: 90%;
+    width: 100px;
+    height: 100px;
+  }
+  .ball2 {
+    top: 5%;
+    left: 10%;
+    width: 100px;
+    height: 100px;
+  }
+
+  .home {
+    margin: 0;
+    width: 100%;
+    min-height: 100vh;
+  }
+
+ .hbanner{
+  margin: -4em 0 0 0 ;
+  
+ }
+  .gallaryimg {
+    padding: 0;
+  }
+
+  .inputbar,
+  .buttonbar {
+    padding: 0.4em 0.2em;
+  }
+}
+
+@media screen and (width <= 600px) {
+
+  .hbanner{
+    background: #18181b;
+    width: 100vw;
+    min-height: 150vh;
+  }
+}
